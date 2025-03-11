@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개2</title>
+</head>
+<body>
+    <script>
+        const newH1 = document.createElement("h1");
+        newH1.textContent = "안녕하세요! 저는 홍길동입니다.";
+
+        const newImg = document.createElement("img");
+        newImg.src ="profiles.jpg";
+        newImg.alt = "profiles";
+
+        const newH2 = document.createElement("h2");
+        newH2.textContent = "소개";
+
+        const newUl = document.createElement("ul");
+        const majorLi = document.createElement("li");
+        majorLi.textContent = "🎓 전공: 컴퓨터 공학";
+        newUl.appendChild(majorLi);
+
+        const locationLi = document.createElement("li");
+        locationLi.textContent = "🌍 위치: 서울, 대한민국.";
+        newUl.appendChild(locationLi);
+
+        const hobbyLi = document.createElement("li");
+        hobbyLi.textContent = "📚 취미: 독서, 여행, 코딩";  
+        newUl.appendChild(hobbyLi);
+
+        const newDiv = document.createElement("div");
+        newDiv.textContent = "궁금한 사항이 있다면 연락주세요. AAA@naver.com";
+
+
+        document.body.appendChild(newH1);
+        document.body.appendChild(newImg);
+        document.body.appendChild(newH2);
+        document.body.appendChild(newUl);
+        document.body.appendChild(newDiv);
+    </script>
+</body>
+</html>
