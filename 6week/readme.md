@@ -1,4 +1,5 @@
-6주차
+6주차<br>
+오늘의 주제: usestate<br>
 🎣 7장 훅(Hooks)
 🔍 7.1 훅이란 무엇인가?
 함수형 컴포넌트에서도 state, 생명주기 메서드 등의 기능을 사용할 수 있도록 도와주는 API 🧩<br>
@@ -87,3 +88,9 @@ useEffect에 의존성 배열 유무에 따라 호출 시점이 달라짐<br>
 useState, useEffect는 가장 많이 쓰이며, 성능 최적화를 위해 useMemo, useCallback, useRef도 중요<br>
 
 코드 재사용성을 높이기 위해 커스텀 훅을 직접 만들 수 있음 🔨<br><br>
+
+기억할것<br>
+const [state, setState] = useState(initialValue);<br>
+ state: 현재 상태 값<br>
+ setState: 상태를 변경하는 함수<br>
+ initialValue: 상태의 초기 값<br>
