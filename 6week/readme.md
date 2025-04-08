@@ -1,5 +1,12 @@
 6주차<br>
 오늘의 주제: usestate<br>
+state-> 컴포넌트안에 있는 변수<br>
+화면에 영향을 실시간으로 줄수있는 변수<br>
+리액트 컴포넌트는 부모 컴포넌트가 리렌더링
+되면 자식 컴포넌트 또한 리렌더링 된다(바뀐 내용이
+없다 할지라도!).<br>
+Updating state based on the previous state<br>
+
 🎣 7장 훅(Hooks)
 🔍 7.1 훅이란 무엇인가?
 함수형 컴포넌트에서도 state, 생명주기 메서드 등의 기능을 사용할 수 있도록 도와주는 API 🧩<br>
@@ -94,3 +101,50 @@ const [state, setState] = useState(initialValue);<br>
  state: 현재 상태 값<br>
  setState: 상태를 변경하는 함수<br>
  initialValue: 상태의 초기 값<br>
+
+📘 Web Programming05.pdf 마크다운 요약
+문장 끝마다 <br> 추가했고, 챕터 끝엔 <br> 하나 더 넣었어! 이모지로 가독성도 챙겼어 💪
+
+🧠 1. 상태 (State)와 관련된 리액트 기본 개념
+컴포넌트는 props와 state를 이용해 동작을 제어함<br>
+
+props는 부모 컴포넌트에서 자식에게 전달하는 데이터<br>
+
+state는 컴포넌트 내부에서 관리되는 동적인 데이터<br>
+
+상태(state)가 변경되면 컴포넌트는 자동으로 다시 렌더링됨<br>
+
+React는 변경된 부분만 업데이트하는 Virtual DOM 기반으로 동작<br><br>
+
+🛠️ 2. 클래스형 컴포넌트에서의 state 사용
+constructor 내에서 state를 정의하고 this.state로 접근함<br>
+
+state 변경 시에는 this.setState() 사용<br>
+
+render() 함수에서 state 값을 기반으로 화면을 구성함<br>
+
+예시: 버튼을 클릭할 때마다 숫자가 증가하는 간단한 카운터 구현<br><br>
+
+🧪 3. 함수형 컴포넌트와 훅(Hook)
+함수형 컴포넌트에서는 useState() 훅을 사용해 상태를 선언함<br>
+
+구조: const [count, setCount] = useState(0);<br>
+
+setCount를 호출하면 컴포넌트는 자동으로 다시 렌더링됨<br>
+
+useEffect() 등 다른 훅들과 함께 다양한 상태 관리가 가능함<br><br>
+
+🔁 4. state 변경 시 주의사항
+state는 직접 변경하지 않고 setState 또는 set함수로 변경해야 함<br>
+
+배열이나 객체 상태를 업데이트할 땐 불변성 유지가 중요함<br>
+
+새로운 배열/객체를 만들어 업데이트하는 방식 사용 (예: spread 문법)<br><br>
+
+🧩 5. 여러 state가 있을 때 관리 방법
+여러 개의 useState()를 사용할 수 있음<br>
+
+또는 useReducer()로 복잡한 상태 관리를 일괄적으로 처리할 수 있음<br>
+
+상태 간 의존성이 높거나 로직이 복잡할 경우 리듀서 사용을 고려함<br><br>
+
