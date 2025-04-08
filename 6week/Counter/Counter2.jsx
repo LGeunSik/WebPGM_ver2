@@ -1,0 +1,22 @@
+import React, {useState} from "react";
+
+function Counter2(props){
+    const [ count, setCount] = useState(0);
+
+
+return (
+    <div>
+        <p>총 {count}번 클릭했습니다.</p>
+        <button onClick={()=>{
+            setCount(count +1);
+            console.log("현재 count값 :",count);
+            }}>
+            클릭
+        </button>
+    </div>
+    
+);
+
+}
+
+export default Counter2;
