@@ -1,0 +1,29 @@
+body {
+    background-color: #e0f7e0; /* 연한 초록색 */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .side-gif {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px; /* GIF 크기 조정 */
+  }
+  
+  .left {
+    left: 10px; /* 왼쪽 위치 */
+  }
+  
+  .right {
+    right: 10px; /* 오른쪽 위치 */
+  }
+  
